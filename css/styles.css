@@ -21,7 +21,7 @@
   --bg-color-social-icons: #4d5ae5;
   --bg-color-social-icons-hover: #404bbf;
   --bg-footer-social-icons-hover: #31d0aa;
-  --customers-color-icon:   #8e8f99;
+  --customers-color-icon: #8e8f99;
 }
 
 p,
@@ -220,12 +220,10 @@ body {
   gap: 24px;
   padding-top: 24px;
 }
-.visionstategy-icon {max-width: 264px;padding: 24px 100px; margin-bottom: 8px;
-}
-
-.visionstategy-local-icon {
- 
-  
+.visionstategy-icon {
+  max-width: 264px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .visionstrategy-item {
@@ -329,9 +327,6 @@ body {
 
 /**-----------Секція 4--------------*/
 
-.customers {
-}
-
 .customers-titl {
   font-weight: 700;
   font-size: 36px;
@@ -351,7 +346,6 @@ body {
 .customers-item {
   width: 168px;
   height: 88px;
-  
 }
 
 .customers-item:hover {
@@ -366,8 +360,8 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #8e8f99;
-    border-radius: 4px;
-    color: var(--customers-color-icon , #8e8f99);
+  border-radius: 4px;
+  color: var(--customers-color-icon, #8e8f99);
 }
 
 .customs-icon {
@@ -454,9 +448,6 @@ body {
 
 .footer-soc-icon {
   fill: #f4f4fd;
-}
-
-.footer-soc-icon {
 }
 
 /**-------------Сторінка портфоліо--------------*/
