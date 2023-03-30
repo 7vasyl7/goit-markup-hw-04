@@ -368,7 +368,7 @@ body {
   fill: currentColor;
 }
 
-.customs-icon:hover {
+.customers-item:hover .customs-icon {
   fill: #404bbf;
 }
 
