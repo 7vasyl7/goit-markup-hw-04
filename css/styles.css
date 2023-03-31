@@ -6,7 +6,8 @@
 
 :root {
   --color-headings: #2e2f42;
-  --button-background-color: #404bbf;
+  --button-background-color:#4D5AE5;
+  --button-background-hover: #404bbf;
   --filter-btn-border: #f4f4fd;
   --color-logo-web: #4d5ae5;
   --color-logo-studio: #2e2f42;
@@ -117,7 +118,7 @@ body {
   align-items: center;
 }
 
-.header-logo {
+.header-logo{
   display: flex;
   align-items: center;
 }
@@ -205,14 +206,15 @@ body {
   line-height: 1.5;
   color: #ffffff;
   letter-spacing: 0.04em;
-  background-color: var(--button-background-color, #404bbf);
+  background-color: var(--button-background-color,#4D5AE5);
   cursor: pointer;
   border-radius: 4px;
   border: 0;
 }
 
-.vision-btn:is(:hover, :focus) {
-  background-color: var(--button-background-color, #404bbf);
+.vision-btn:is(:hover,
+:focus) {
+  background-color: var(--button-background-hover,#404bbf);
 }
 
 .visionstrategy-list {
@@ -221,8 +223,12 @@ body {
   padding-top: 24px;
 }
 .visionstategy-icon {
-  max-width: 264px;
-  padding: 24px 100px;
+  display: flex;
+  background-color: #F4F4FD;
+    border-radius: 4px;
+    align-items: center;
+      justify-content: center;
+  
   margin-bottom: 8px;
 }
 
@@ -285,7 +291,7 @@ body {
 
 .container-team-name {
   background-color: var(--color-team-name, #ffffff);
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -344,13 +350,13 @@ body {
 }
 
 .customers-item {
-  width: 168px;
+  flex-basis: calc((100% - 120px) / 6);
   height: 88px;
 }
 
-.customers-item:hover {
-  border: 1px solid #404bbf;
-  border-radius: 4px;
+.customers-icon-link:hover {
+  border-color: #404bbf;
+  
 }
 
 .customers-icon-link {
@@ -483,6 +489,7 @@ body {
 .filter-btn:is(:hover, :focus) {
   color: #ffffff;
   background-color: var(--button-background-color, #404bbf);
+  border-color: var(--button-background-color,#404bbf);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -499,7 +506,8 @@ body {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.category-item:is(:hover, :focus) {
+.category-item-photo:is(:hover, :focus) {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
